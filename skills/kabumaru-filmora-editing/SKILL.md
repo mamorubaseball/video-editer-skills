@@ -10,7 +10,7 @@ description: かぶまる動画をFilmoraで編集する際、共通の同期手
 `filmora-youtube-editing` の「ローカル生成モード」を既定で使い、Filmora UIは操作しない。完了物はWFP、概要欄、編集レポート、画像音声対応表であり、ユーザーはWFPをFilmoraで開いて確認する。
 
 - 音声認識は `/Users/mamoru/kabu_maru/tools/transcribe_word_timestamps.py` のキャッシュを再利用する。音声差し替えまたは明示的な `--force` 以外では再認識しない。
-- 画像OCRは `/Users/mamoru/kabu_maru/tools/ocr_images.swift`、対応表の作成は `/Users/mamoru/kabu_maru/tools/build_image_audio_map.py` を使用する。いずれもローカル実行で、画像・音声を外部へ送信しない。
+- 画像OCRは `/Users/mamoru/kabu_maru/tools/ocr_images.swift`、対応表の作成は `/Users/mamoru/kabu_maru/tools/build_image_audio_map.py` を使用する。いずれもローカル実行で、画像・音声を外部へ送信しない。OCRがエラーまたは空文字の場合は、その結果を根拠に画像を置かず、対応表を `blank` にするか、画像内の見出しを確認済みのキューとして明示記録する。
 - 番号付き画像ディレクトリは章の候補絞り込みに使うが、画像を番号順に配置する根拠にはしない。
 - `画像音声対応表.json` の各行には、実音声時刻、発話、画像パス、OCR根拠、一致語・数値、一致スコア、採用理由または空白理由を記録する。根拠が不足する行は必ず空白にする。
 
