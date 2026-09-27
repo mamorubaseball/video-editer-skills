@@ -1,0 +1,4 @@
+interface:
+  display_name: "かぶまる Filmora編集"
+  short_description: "かぶまる動画を字幕基準で画像・色・演出まで編集"
+  default_prompt: "かぶまる素材をFilmoraで字幕基準に編集し、確認用動画まで作成してください。"

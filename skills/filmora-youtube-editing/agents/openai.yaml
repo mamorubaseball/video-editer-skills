@@ -1,0 +1,4 @@
+interface:
+  display_name: "Filmora YouTube編集"
+  short_description: "字幕を基準に画像・色・演出を合わせてFilmora編集"
+  default_prompt: "素材をFilmoraで字幕基準に編集し、確認用動画まで作成してください。"
